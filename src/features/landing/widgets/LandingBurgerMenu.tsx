@@ -1,5 +1,7 @@
 import { LandingButton } from "@/features/landing/components/LandingButton";
-import { useEffect, useRef, useState } from "react";
+import { useClickOutsideDetector } from "@/shared/hooks/use-click-outside-detector";
+import { useKeyDown } from "@/shared/hooks/use-key-press";
+import { useRef, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 export function LandingBurgerMenu() {
@@ -7,34 +9,19 @@ export function LandingBurgerMenu() {
 
   const menuRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const handleOutsideClick = (e: PointerEvent) => {
-      if (!e.target || !menuRef.current) return;
+  useClickOutsideDetector({
+    elementRef: menuRef,
+    onClickOutside: () => {
+      setIsMenuOpen(false);
+    },
+  });
 
-      const menuRefContainsClickedElement = menuRef.current?.contains(
-        e.target as Node,
-      );
-
-      if (!menuRefContainsClickedElement) {
-        setIsMenuOpen(false);
-      }
-    };
-
-    const handleKeyPress = (e: KeyboardEvent) => {
-      if (e.code === "Escape") {
-        setIsMenuOpen(false);
-      }
-    };
-
-    document.addEventListener("click", handleOutsideClick);
-
-    document.addEventListener("keyup", handleKeyPress);
-
-    return () => {
-      document.removeEventListener("click", handleOutsideClick);
-      document.removeEventListener("keyup", handleKeyPress);
-    };
-  }, []);
+  useKeyDown({
+    key: "Escape",
+    onKeyDown: () => {
+      setIsMenuOpen(false);
+    },
+  });
 
   return (
     <div ref={menuRef} className="relative flex items-center">
