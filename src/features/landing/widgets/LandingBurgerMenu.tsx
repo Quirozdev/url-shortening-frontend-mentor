@@ -48,7 +48,7 @@ export function LandingBurgerMenu() {
               <li className="text-preset-6-bold cursor-pointer self-center text-white">
                 Login
               </li>
-              <LandingButton text="Sign Up" size="small" disabled={false} />
+              <LandingButton text="Sign Up" size="small" />
             </div>
           </ul>
         </div>
