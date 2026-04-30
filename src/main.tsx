@@ -10,6 +10,6 @@ import "@fontsource/poppins/500-italic.css";
 
 createRoot(document.getElementById("root")!).render(
   <AppProviders>
-    <RouterProvider router={router} />,
+    <RouterProvider router={router} />
   </AppProviders>,
 );

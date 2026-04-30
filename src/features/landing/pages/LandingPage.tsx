@@ -1,10 +1,10 @@
+import { LandingContainer } from "@/features/landing/components/LandingContainer";
+import { LandingPageHeader } from "@/features/landing/widgets/LandingPageHeader";
+
 export function LandingPage() {
-    return <div>
-        <img src="/images/logo.svg" />
-        <ul>
-            <li>
-                <span className="text-preset-1">Features</span>
-            </li>
-        </ul>
-    </div>
+  return (
+    <LandingContainer>
+      <LandingPageHeader />
+    </LandingContainer>
+  );
 }
