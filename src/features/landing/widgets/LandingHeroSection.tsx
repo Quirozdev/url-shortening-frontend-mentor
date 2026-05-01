@@ -11,13 +11,17 @@ export function LandingHeroSection() {
           Build your brand’s recognition and get detailed insights on how your
           links are performing.
         </p>
-        <LandingButton text="Get Started" size="large" className="w-fit" />
+        <LandingButton
+          text="Get Started"
+          size="large"
+          className="text-preset-5-bold w-fit"
+        />
       </div>
       <div className="flex-1 overflow-hidden">
         <img
           src="/images/illustration-working.svg"
           alt="Working Illustration"
-          className="mx-auto @2xl:min-w-max"
+          className="mx-auto min-w-[150%] @md:min-w-[120%] @2xl:min-w-max"
         />
       </div>
     </section>

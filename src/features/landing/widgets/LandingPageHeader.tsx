@@ -20,7 +20,11 @@ export function LandingPageHeader() {
       <>
         <div className="hidden items-center gap-400 @2xl:flex">
           <NavItem text="Login" />
-          <LandingButton text="Sign Up" size="small" />
+          <LandingButton
+            text="Sign Up"
+            size="small"
+            className="text-preset-7-bold"
+          />
         </div>
         <div className="flex items-center @2xl:hidden">
           <LandingBurgerMenu />

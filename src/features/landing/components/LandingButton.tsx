@@ -1,8 +1,11 @@
-interface Props {
+import type React from "react";
+import { twMerge } from "tailwind-merge";
+import clsx from "clsx";
+
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
   size: "small" | "large";
   disabled?: boolean;
-  className?: string;
 }
 
 export function LandingButton({
@@ -10,6 +13,7 @@ export function LandingButton({
   size,
   disabled = false,
   className,
+  ...props
 }: Props) {
   const sizeClasses = size === "small" ? "px-350 py-100" : "px-500 py-300";
 
@@ -18,7 +22,11 @@ export function LandingButton({
   return (
     <button
       disabled={disabled}
-      className={`text-preset-7-bold cursor-pointer rounded-[28px] text-white ${sizeClasses} ${disabledClasses} ${className}`}
+      className={`${twMerge(
+        clsx("cursor-pointer", "rounded-[28px]", sizeClasses, disabledClasses),
+        className,
+      )} text-white`}
+      {...props}
     >
       {text}
     </button>
