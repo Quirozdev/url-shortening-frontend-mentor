@@ -24,7 +24,7 @@ export function LandingBurgerMenu() {
   });
 
   return (
-    <div ref={menuRef} className="relative flex items-center">
+    <div ref={menuRef} className="flex items-center">
       <button
         className="cursor-pointer"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -32,7 +32,7 @@ export function LandingBurgerMenu() {
         <RxHamburgerMenu className="size-6" />
       </button>
       {isMenuOpen && (
-        <div className="absolute top-500 right-full w-[calc(100vw-5rem)] rounded-[10px] bg-purple-950 p-400 @2xl:w-[calc(100vw-24rem)]">
+        <div className="absolute top-24 left-1/2 z-10 w-[calc(100%-2.5rem)] -translate-x-1/2 rounded-[10px] bg-purple-950 p-400 @xl:w-[calc(100%-3.5rem)]">
           <ul className="flex flex-col items-center gap-400">
             <li className="text-preset-6-bold cursor-pointer text-white">
               Features
