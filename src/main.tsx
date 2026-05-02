@@ -5,6 +5,7 @@ import { RouterProvider } from "react-router";
 import { router } from "@/app/router";
 import AppProviders from "@/app/providers/provider";
 import "@fontsource/poppins/700.css";
+import "@fontsource/poppins/700-italic.css";
 import "@fontsource/poppins/500.css";
 import "@fontsource/poppins/500-italic.css";
 
