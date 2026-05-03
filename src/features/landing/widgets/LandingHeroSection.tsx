@@ -19,7 +19,7 @@ export function LandingHeroSection() {
       </div>
       <div className="flex-1">
         <img
-          src="/images/illustration-working.svg"
+          src={`${import.meta.env.BASE_URL}/images/illustration-working.svg`}
           alt="Working Illustration"
           className="mx-auto min-w-[120%] object-cover @3xl:min-w-full @5xl:-mr-32 @5xl:min-w-max"
         />

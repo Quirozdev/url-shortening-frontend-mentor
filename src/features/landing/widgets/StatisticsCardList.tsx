@@ -6,18 +6,18 @@ export function StatisticsCardList() {
       <div className="absolute top-0 left-1/2 h-full w-2 -translate-x-1/2 bg-blue-400 @5xl:hidden"></div>
       <div className="absolute top-1/2 hidden h-2 w-full -translate-y-1/2 bg-blue-400 @5xl:block"></div>
       <StatisticsCard
-        iconSrc="/images/icon-brand-recognition.svg"
+        iconSrc={`${import.meta.env.BASE_URL}/images/icon-brand-recognition.svg`}
         title="Brand Recognition"
         text="Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content."
       />
       <StatisticsCard
-        iconSrc="/images/icon-detailed-records.svg"
+        iconSrc={`${import.meta.env.BASE_URL}/images/icon-detailed-records.svg`}
         title="Detailed Records"
         text="Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions."
         className="@5xl:top-10"
       />
       <StatisticsCard
-        iconSrc="/images/icon-fully-customizable.svg"
+        iconSrc={`${import.meta.env.BASE_URL}/images/icon-fully-customizable.svg`}
         title="Fully Customizable"
         text="Improve brand awareness and content discoverability through customizable links, supercharging audience engagement."
         className="@5xl:top-20"
