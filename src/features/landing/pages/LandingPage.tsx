@@ -1,4 +1,5 @@
 import { LandingContainer } from "@/features/landing/components/LandingContainer";
+import { AdvancedStatisticsSection } from "@/features/landing/widgets/AdvancedStatisticsSection";
 import { LandingHeroSection } from "@/features/landing/widgets/LandingHeroSection";
 import { LandingPageHeader } from "@/features/landing/widgets/LandingPageHeader";
 import { URLShortenerForm } from "@/features/landing/widgets/URLShortenerForm";
@@ -11,6 +12,7 @@ export function LandingPage() {
       <LandingHeroSection />
       <URLShortenerForm />
       <URLShortenedList />
+      <AdvancedStatisticsSection />
     </LandingContainer>
   );
 }
