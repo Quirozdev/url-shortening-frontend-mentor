@@ -17,11 +17,11 @@ export function LandingHeroSection() {
           className="text-preset-5-bold w-fit"
         />
       </div>
-      <div className="flex-1 overflow-hidden">
+      <div className="flex-1">
         <img
           src="/images/illustration-working.svg"
           alt="Working Illustration"
-          className="mx-auto min-w-[150%] @md:min-w-[120%] @2xl:min-w-max"
+          className="mx-auto min-w-[120%] object-cover @3xl:min-w-full @5xl:-mr-32 @5xl:min-w-max"
         />
       </div>
     </section>
