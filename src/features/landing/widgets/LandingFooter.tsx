@@ -8,7 +8,7 @@ import { TwitterIcon } from "@/shared/components/icons/TwitterIcon";
 export function LandingFooter() {
   return (
     <footer className="relative -mt-20 grid w-full max-w-7xl grid-cols-1 justify-items-center gap-y-12 py-14 @5xl:grid-cols-[1fr_auto_1fr] @5xl:justify-items-normal @5xl:py-16">
-      <a href="/">
+      <a href="#">
         <Logo className="text-white" />
       </a>
       <div className="flex flex-col gap-8 text-center @5xl:flex-row @5xl:gap-24 @5xl:text-left">

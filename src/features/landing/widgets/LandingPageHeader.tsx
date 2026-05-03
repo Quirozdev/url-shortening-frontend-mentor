@@ -7,7 +7,7 @@ export function LandingPageHeader() {
   return (
     <header className="@container flex w-full max-w-7xl items-center justify-between pt-600">
       <div className="flex items-center gap-600">
-        <a href="/">
+        <a href="#">
           <Logo className="text-gray-900" />
         </a>
         <nav className="hidden @2xl:block">
