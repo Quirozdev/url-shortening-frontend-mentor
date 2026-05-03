@@ -8,7 +8,7 @@ export function BoostLinksSection({ className }: Props) {
   return (
     <section
       className={clsx(
-        "flex w-[120%] flex-col items-center gap-6 bg-purple-950 bg-[url(/images/bg-boost-mobile.svg)] bg-cover bg-no-repeat py-14 @3xl:bg-[url(/images/bg-boost-desktop.svg)]",
+        "flex w-screen flex-col items-center gap-6 bg-purple-950 bg-[url(/images/bg-boost-mobile.svg)] bg-cover bg-no-repeat py-14 @3xl:bg-[url(/images/bg-boost-desktop.svg)]",
         className,
       )}
     >
