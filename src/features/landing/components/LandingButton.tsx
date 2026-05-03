@@ -23,7 +23,12 @@ export function LandingButton({
     <button
       disabled={disabled}
       className={`${twMerge(
-        clsx("cursor-pointer", "rounded-[28px]", sizeClasses, disabledClasses),
+        clsx(
+          "cursor-pointer active:bg-blue-300",
+          "rounded-[28px]",
+          sizeClasses,
+          disabledClasses,
+        ),
         className,
       )} text-white`}
       {...props}

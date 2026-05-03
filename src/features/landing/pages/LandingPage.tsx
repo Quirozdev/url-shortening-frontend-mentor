@@ -1,5 +1,6 @@
 import { LandingContainer } from "@/features/landing/components/LandingContainer";
 import { AdvancedStatisticsSection } from "@/features/landing/widgets/AdvancedStatisticsSection";
+import { BoostLinksSection } from "@/features/landing/widgets/BoostLinksSection";
 import { LandingHeroSection } from "@/features/landing/widgets/LandingHeroSection";
 import { LandingPageHeader } from "@/features/landing/widgets/LandingPageHeader";
 import { URLShortenerForm } from "@/features/landing/widgets/URLShortenerForm";
@@ -13,6 +14,7 @@ export function LandingPage() {
       <URLShortenerForm />
       <URLShortenedList />
       <AdvancedStatisticsSection />
+      <BoostLinksSection className="@5xl:mt-20" />
     </LandingContainer>
   );
 }

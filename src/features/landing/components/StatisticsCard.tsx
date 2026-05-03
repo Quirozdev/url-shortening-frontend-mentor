@@ -1,12 +1,27 @@
-interface Props {
+import clsx from "clsx";
+import type React from "react";
+
+interface Props extends React.HTMLAttributes<HTMLDivElement> {
   iconSrc: string;
   title: string;
   text: string;
 }
 
-export function StatisticsCard({ iconSrc, title, text }: Props) {
+export function StatisticsCard({
+  iconSrc,
+  title,
+  text,
+  className,
+  ...props
+}: Props) {
   return (
-    <div className="relative rounded-[5px] bg-white px-5 pt-16 pb-9 @5xl:px-8">
+    <div
+      className={clsx(
+        "relative rounded-[5px] bg-white px-5 pt-16 pb-9 @5xl:px-8",
+        className,
+      )}
+      {...props}
+    >
       <div className="absolute top-0 left-1/2 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-purple-950">
         <img src={iconSrc} />
       </div>
