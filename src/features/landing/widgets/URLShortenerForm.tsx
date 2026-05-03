@@ -46,7 +46,7 @@ export function URLShortenerForm() {
           type="text"
           placeholder="Shorten a link here..."
           className={clsx(
-            "3xl:text-preset-5-medium text-preset-7-medium rounded-[10px] bg-white px-8 py-4 text-gray-900 outline-none",
+            "@3xl:text-preset-5-medium text-preset-7-medium rounded-[10px] bg-white px-8 py-4 text-gray-900 outline-none",
             errors.url && "border-4 border-red-400 text-red-400",
           )}
           {...register("url")}
