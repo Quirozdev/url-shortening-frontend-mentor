@@ -17,7 +17,7 @@ const userSchema = z.object({
 type FormValues = z.infer<typeof userSchema>;
 
 export function URLShortenerForm() {
-  const { mutateAsync: shortenUrl, isPending } = useShortenUrl();
+  const { mutateAsync: shortenUrl } = useShortenUrl();
 
   const { saveUrl } = useUrlsStore();
 
