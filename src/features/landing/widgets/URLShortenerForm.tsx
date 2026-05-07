@@ -25,6 +25,7 @@ export function URLShortenerForm() {
     handleSubmit,
     register,
     formState: { errors, isValid, isDirty },
+    reset,
   } = useForm<FormValues>({
     defaultValues,
     resolver: zodResolver(userSchema),
@@ -34,6 +35,7 @@ export function URLShortenerForm() {
   const onSubmit = async (data: FormValues) => {
     const { long_url, short_url } = await shortenUrl(data.url);
     saveUrl(long_url, short_url);
+    reset();
   };
 
   return (

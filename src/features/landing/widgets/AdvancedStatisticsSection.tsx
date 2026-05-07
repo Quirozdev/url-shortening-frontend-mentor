@@ -13,7 +13,7 @@ export function AdvancedStatisticsSection() {
         </p>
       </div>
       <StatisticsCardList />
-      <div className="absolute -top-[20vh] -left-[50vw] -z-10 h-[140vh] w-[200vw] bg-purple-50"></div>
+      <div className="absolute -top-[20vh] -left-[50vw] -z-10 h-[200vh] w-[200vw] bg-purple-50"></div>
     </section>
   );
 }
